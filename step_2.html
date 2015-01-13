@@ -20,8 +20,8 @@
 		</div>
 		<div class="header__nav">
 			<ul class="dots">
-				<li><a href="#" class="is-active"><i></i></a></li>
 				<li><a href="#"><i></i></a></li>
+				<li><a href="#" class="is-active"><i></i></a></li>
 				<li><a href="#"><i></i></a></li>
 			</ul>
 		</div>
@@ -37,37 +37,7 @@
 	<div class="content">
 		<div class="content__header">
 			<input class="fnd blue" type="button"  value="find an image">
-			<div class="modal error type">
-				<input type="button" class="exit" value="x">
-				<h3>Incompatible File Type</h3>
-				<p>The file you have selected is not an accepted format. Please select another photo.</p>
-				<input type="button" class="blue" value="select another image">
-			</div>
-			<div class="modal error size">
-				<input type="button" class="exit" value="x">
-				<h3>Your File Is TOO Big</h3>
-				<p>The file you have selected is too large and cannot be uploaded. Please select another photo.</p>
-				<input type="button" class="blue" value="select another image">
-			</div>
-			<input class=" fb blue" type="button" value="use facebook">
-			<div class="modal select album">
-				<input type="button" class="exit" value="x">
-				<h3>Please select an album from your Facebook account.</h3>
-				<div class="arrw_l"></div>
-				<div class="photo"><div class="inn"></div></div>
-				<div class="photo"><div class="inn"></div></div>
-				<div class="photo"><div class="inn"></div></div>
-				<div class="arrw_r"></div>
-			</div>
-			<div class="modal select photo">
-				<input type="button" class="exit" value="x">
-				<h3>Please select a photo in your album.</h3>
-				<div class="arrw_l"></div>
-				<div class="alb"><div class="cover"></div><p class="about"></div>
-				<div class="alb"><div class="cover"></div><p class="about"><span class="name">Album Name</span><span class="amt">15</span></p></div>
-				<div class="alb"><div class="cover"></div><p class="about"><span class="name">Album Name</span>(<span class="amt">50</span>)</p></div>
-				<div class="arrw_r"></div>
-			</div>
+			<input class="fb blue" type="button" value="use facebook">
 			<span>or drag and drop photos</span>
 		</div>
 		<div class="content__field">
@@ -75,8 +45,8 @@
 				<span>Add 5-15 photos</span>
 			</div>
 		</div>
-		<div class="content__footer">
-			<input type="button blue" class="button" value="create">
+		<div class="content__foo">
+			<input type="button" class="button blue" value="create">
 			<span>cancel</span>
 		</div>
 	</div>
@@ -89,7 +59,37 @@
 			<li><a href="#">www.pampers.com</a></li>
 		</ul>
 	</div>
-	<!-- END footer -->
+	<!-- END footer  -->
+	<div class="modal error type">
+		<input type="button" class="exit" value="X">
+		<h3>Incompatible File Type</h3>
+		<div class='msg'><span>The file you have selected is not an accepted format.</span><br><span>Please select another photo.</span></div>
+		<input type="button" class="blue" value="select another image">
+	</div>
+	<div class="modal error size">
+		<input type="button" class="exit" value="X">
+		<h3>Your File Is TOO Big</h3>
+		<div class="msg"><span>The file you have selected is too large and cannot be uploaded.<br>Please select another photo.</span></div>
+		<input type="button" class="blue" value="select another image">
+	</div>
+	<div class="modal select photo">
+		<input type="button" class="exit" value="x">
+		<h3>Please select a photo in your album.</h3>
+		<div class="arr_l"></div>
+		<div class="photo"><div class="inn"></div></div>
+		<div class="photo"><div class="inn"></div></div>
+		<div class="photo"><div class="inn"></div></div>
+		<div class="arr_r"></div>
+	</div>
+	<div class="modal select album">
+		<input type="button" class="exit" value="x">
+		<h3>Please select an album from your Facebook account.</h3>
+		<div class="arr_l"></div>
+		<div class="cover"><div class="photo"></div><p class="info"><span class="name">Album name</span><br>(<span class="amt">10</span>)</p></div>
+		<div class="cover"><div class="photo"></div><p class="info"><span class="name">Album name</span><br>(<span class="amt">15</span>)</p></div>
+		<div class="cover"><div class="photo"></div><p class="info"><span class="name">Album name</span><br>(<span class="amt">50</span>)</p></div>
+		<div class="arr_r"></div>
+	</div>
 </div>
 <!-- END out-->
 <!-- load scripts -->
