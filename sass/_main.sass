@@ -1,4 +1,169 @@
 // Normally mainpage styles
+$logo: #ffde00
+$text: #00b2a9
+.blue
+	// background-color: $text
+	+s(btn)
+	// width: 115px 
+	// height: 30px 
+	color: #fff
+	// +border-radius(10px, 10px)
+	font-weight: bold
+	font-size: 15px 
+	vertical-align: top
+	cursor: pointer
+a
+	color: white
+	text-decoration: none 
+.out
+	width: 100%
+	+g(#fff, #c5f3f4)
+	.header
+		+clr
+		&__logo
+			+s(hearts)
+			a
+				font-family: "GothamRoundedMedium"
+				font-size: 18px 
+				position: relative
+				left: 17%
+				
+				i
+					+s(logo)
+					display: block
+					position: relative
+					right: 5px 
+		&__nav
+			.dots
+				float: right
+				margin-right: 5% 					
+				li
+					display: inline-block
+					.is-active
+						i
+							+s(dot_a)
+							display: inline-block
+					a
+						i
+							+s(dot)
+							display: inline-block
+	.step
+		margin: 0 auto 
+		width: 90% 
+		+clr
+		&__num
+			display: inline-block
+			float: left
+			span
+				font-family: "GothamRoundedMedium"
+				font-size: 80px
+				+text-shadow(-2px -2px 3px #b6b179) 
+				font-weight: bold 
+				color: $logo
+		&__desc
+			width: 300px 
+			padding-left: 55px
+			padding-top: 35px  
+			.about
+				color: $text
+				font-family: "GothamRoundedMedium"
+				font-size: 24px
+				font-weight: bold  
+			.foo
+				color: $text
+				font-family: "GothamRoundedMedium"
+				font-size: 19px 
+				font-weight: bold
+	.content
+		margin: 0 auto
+		width: 90%
+		margin-top: 15px 
+		+clr
+		&__greet
+			+clr
+			.check
+				max-width: 50% 
+				padding-left: 55px 
+				float: left
+				&__inn
+					// width: 50% 
+					.about
+						width: 100%
+						margin-bottom: 25px 
+						p
+							color: $text
+							font-family: "GothamRoundedBook"
+							font-weight: lighter 
+					.box
+						padding-bottom: 20px
+						input[type="checkbox"]
+							float: left
+							background-color: #b2b2b2 
+							width: 23px
+							height: 23px
+						p
+							padding-left: 30px
+							font-family: "GothamRoundedMedium"
+							color: $text
+			.photo
+				width: 30% 
+				min-width: 265px
+				max-width: 317px
+				float: right
+				text-align: center
+				.inn
+					width: 100%
+					min-width: 265px
+					overflow: hidden 
+					border: 1px solid #c9cece 
+					+border-radius(20px, 20px)
+					img
+						float: right
+				.nxt
+					margin-top: 25px 
+		&__video
+			width: 100%
+			margin-top: -10px 
+			+clr 
+			.inner
+				width: 50%
+				padding-left: 55px
+				display: inline-block
+				video
+					width: 100%
+
+	.footer
+		width: 90%
+		margin: 0 auto 
+		ul
+			padding: 25px 0 
+			text-align: center
+			padding-left: 55px 
+			li
+				display: inline-block
+				float: left
+				padding-right: 30% 
+				// &:first-child
+					// float: left
+				&:last-child
+					padding-right: 0 
+			a
+				color: #000
+				font-family: "GothamRoundedBook"
+				  
+
+						
+				
+
+							
+
+			
+
+		
+	
+
+	
+
 
 
 

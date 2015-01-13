@@ -16,22 +16,24 @@
 	<!-- BEGIN header  -->
 	<div class="header">
 		<div class="header__logo">
-			<span>a journey of firsts</span>
+			<a href="#" class="logo"><i></i>a journey of firsts</a>
 		</div>
 		<div class="header__nav">
-			<ul class="dotts">
-				<li><a href=""><i></i></a></li>
-				<li><a href="#" ><i></i></a></li>
+			<ul class="dots">
 				<li><a href="#" class="is-active"><i></i></a></li>
+				<li><a href="#"><i></i></a></li>
+				<li><a href="#"><i></i></a></li>
 			</ul>
 		</div>
 	</div>
 	<!-- END header -->
 	<!-- BEGIN step  -->
 	<div class="step">
-		<p class="step__desc"><span class="num">3</span><span class="about">Share Your Story Of Firsts</span></p>
+		<div class="step__num"><span>3</span></div>
+		<div class="step__desc"><span class="about">Share Your Story Of Firsts</span></div>
 	</div>
 	<!-- END step -->
+
 	<!-- BEGIN content  -->
 	<div class="content">
 		<div class="content__watch">
@@ -41,15 +43,10 @@
 			Your browser does not support the video tag.
 			</video>
 		</div>
-		<div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button"></div>
-		<div id="fb-root"></div>
-		<script>(function(d, s, id) {
-		  var js, fjs = d.getElementsByTagName(s)[0];
-		  if (d.getElementById(id)) return;
-		  js = d.createElement(s); js.id = id;
-		  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.0";
-		  fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));</script>
+
+		
+		<iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;layout=button" scrolling="no" frameborder="0" style="border:none; overflow:hidden;height: 20px;width: 55px;" allowTransparency="true"></iframe>
+<!-- 	<a href="http://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;layout=button"></a> -->
 		<a href="https://twitter.com/share" class="twitter-share-button" data-count="none">Tweet</a>
 		
 		<p class="create">Create and share another story.</p>
