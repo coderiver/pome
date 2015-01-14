@@ -30,6 +30,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .l .l-col2 { float: right; width: 70%; }
 
 .out .modal.error, .out .modal.error.type, .out .modal.select { position: absolute; width: 680px; top: 40%; left: 50%; margin-left: -340px; text-align: center; background-color: #fff; padding: 10px; }
+@media only screen and (max-width: 700px) { .out .modal.error, .out .modal.error.type, .out .modal.select { width: 90%; left: 0; margin-left: 2%; } }
 
 .out .modal.error .exit, .out .modal.error.type .exit, .out .modal.select .exit { font-family: Helvetica, Arial, sans-serif; font-size: 18px; font-weight: bold; color: #686868; background-color: #fff; cursor: pointer; float: right; *zoom: 1; }
 .out .modal.error .exit:after, .out .modal.error.type .exit:after, .out .modal.select .exit:after { content: " "; display: table; clear: both; }
@@ -105,34 +106,37 @@ a { color: white; text-decoration: none; }
 .out .content__greet .photo .nxt { margin-top: 25px; }
 @media only screen and (max-width: 700px) { .out .content__greet .photo .nxt { position: relative; float: right; margin-top: 157px; display: none; } }
 .out .content__video { width: 100%; margin-top: -10px; *zoom: 1; }
-@media only screen and (max-width: 700px) { .out .content__video { margin: 0 auto; padding: 20px 0; } }
+@media only screen and (max-width: 700px) { .out .content__video { margin: 0 auto; padding-top: 20px; } }
 .out .content__video:after { content: " "; display: table; clear: both; }
 .out .content__video .inner { width: 50%; display: inline-block; }
 @media only screen and (max-width: 700px) { .out .content__video .inner { width: 70%; padding-left: 15px; } }
 .out .content__video .inner video { width: 100%; }
 .out .content__header { position: relative; bottom: 25px; }
-@media only screen and (max-width: 700px) { .out .content__header { width: 100%; margin-top: 30px; *zoom: 1; }
-  .out .content__header:after { content: " "; display: table; clear: both; } }
+@media only screen and (max-width: 700px) { .out .content__header { width: 80%; margin-top: 30px; padding-left: 55px; } }
 .out .content__header .blue { margin-right: 15px; }
-@media only screen and (max-width: 700px) { .out .content__header .blue { display: inline-block; float: left; margin-right: 0px; } }
+@media only screen and (max-width: 700px) { .out .content__header .blue.fb { margin-right: 0px; } }
+@media only screen and (max-width: 435px) { .out .content__header .blue.fb { margin-bottom: 0px; } }
+@media only screen and (max-width: 435px) { .out .content__header .blue { margin-bottom: 10px; } }
 .out .content__header span { font-family: "Helvetica", "Arial", sans-serif; font-weight: bold; font-size: 15px; color: #6d6d6d; line-height: 36px; }
 @media only screen and (max-width: 700px) { .out .content__header span { display: none; } }
 .out .content__field { margin: 0 auto; width: 100%; min-height: 200px; max-height: 600px; border: 1px solid #d1d1d1; background: #FFF; padding-top: 20px; margin-bottom: 20px; *zoom: 1; }
 .out .content__field:after { content: " "; display: table; clear: both; }
-.out .content__field .inner { padding-left: 20px; }
+@media only screen and (max-width: 700px) { .out .content__field { width: 80%; margin-left: 55px; } }
 .out .content__field .inner span { font-family: "GothamRoundedBook"; font-size: 16px; color: #d5d5d5; }
+@media only screen and (max-width: 700px) { .out .content__field .inner span { display: none; } }
 .out .content__field .item { float: left; padding: 0px 3% 25px 3%; text-align: center; }
 .out .content__field .item .img { width: 110px; height: 65px; overflow: hidden; margin-bottom: 10px; border: 1px solid #a5a5a5; text-align: center; }
 .out .content__field .item .img img { width: 100%; height: auto; }
 .out .content__field .item .edit { font-family: Helvetica, Arial, sans-serif; font-size: 12px; color: #fff; font-weight: bold; -moz-border-radius: 10px / 10px; -webkit-border-radius: 10px 10px; border-radius: 10px / 10px; padding: 5px 15px; background-color: #a5a5a5; cursor: pointer; }
-.out .content__foo { width: 100%; margin: 0 auto; }
+.out .content__foo { width: 80%; margin: 0 auto; }
+@media only screen and (max-width: 700px) { .out .content__foo { margin-left: 55px; } }
 .out .content__foo .blue { margin-right: 15px; }
 .out .content__foo .cncl { font-family: "Helvetica", "Arial", sans-serif; font-weight: bold; font-size: 15px; color: #6d6d6d; line-height: 36px; text-decoration: underline; background: transparent; cursor: pointer; }
 .out .content__watch video .play { background: url('../img/icons-s5a5ee6e5f0.png') 0 -807px no-repeat; width: 41px; height: 42px; display: inline-block; }
 .out .content__share .fb, .out .content__share .tw { display: inline-block; margin: 20px 12px 0px 0px; }
 .out .content__share .create { color: #00b2a9; font-family: "GothamRoundedMedium"; font-size: 14px; margin: 20px 0; }
 .out .content__share .add { width: 185px; }
-.out .footer { width: 80%; margin: 0 auto; }
+.out .footer { width: 80%; margin: 0 auto; margin-top: 20px; }
 @media only screen and (max-width: 700px) { .out .footer { width: 100%; background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2U3ZWNlYyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2NiY2JjYiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='); background-size: 100%; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e7ecec), color-stop(100%, #cbcbcb)); background-image: -moz-linear-gradient(#e7ecec, #cbcbcb); background-image: -webkit-linear-gradient(#e7ecec, #cbcbcb); background-image: linear-gradient(#e7ecec, #cbcbcb); } }
 .out .footer ul { text-align: center; }
 .out .footer ul li { display: inline-block; padding: 10px 0; }
@@ -143,14 +147,20 @@ a { color: white; text-decoration: none; }
 @media only screen and (max-width: 700px) { .out .footer ul li { width: 30%; height: 100%; } }
 .out .footer ul a { color: #7f7f7f; text-shadow: 0 2px #fff; font-family: "GothamRoundedBook"; }
 .out .modal.error .msg { margin: 0 auto; width: 430px; text-align: justify; }
-.out .modal.error .msg span { font-family: "GothamRoundedBook"; font-size: 16px; color: #00b2a9; }
+@media only screen and (max-width: 700px) { .out .modal.error .msg { -ms-word-break: break-all; word-break: break-all; word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; width: 90% !important; } }
+.out .modal.error .msg p { font-family: "GothamRoundedBook"; font-size: 16px; color: #00b2a9; }
 .out .modal.error .blue { margin: 60px 0 30px 0; width: 180px; }
 .out .modal.error.type .msg { width: 430px; }
 .out .modal.error.size .msg { width: 505px; }
+@media only screen and (max-width: 700px) { .out .modal.error.size .msg { -ms-word-break: break-all; word-break: break-all; word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; width: 90% !important; } }
 .out .modal.select .arr_l, .out .modal.select .arr_r { border: 15px solid transparent; display: inline-block; margin-top: 65px; cursor: pointer; }
 .out .modal.select .arr_l { border-right: 15px solid #3a3a3a; float: left; }
 .out .modal.select .arr_r { border-left: 15px solid #3a3a3a; float: right; }
 .out .modal.select.photo .photo { width: 165px; height: 165px; border: 1px solid #c5c5c5; display: inline-block; margin: 5px; cursor: pointer; }
+@media only screen and (max-width: 700px) { .out .modal.select.photo .photo { display: block; margin: 10px auto; } }
+.out .modal.select.album { display: block; }
 .out .modal.select.album .cover { display: inline-block; cursor: pointer; }
+@media only screen and (max-width: 700px) { .out .modal.select.album .cover { display: block; margin: 10px auto; } }
 .out .modal.select.album .cover .photo { width: 165px; height: 165px; border: 1px solid #c5c5c5; display: inline-block; margin: 5px; }
+@media only screen and (max-width: 700px) { .out .modal.select.album .cover .photo { display: block; margin: 0 auto; } }
 .out .modal.select.album .cover p { font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; color: #5b5b5b; }

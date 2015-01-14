@@ -18,6 +18,12 @@ $text: #00b2a9
 	text-align: center
 	background-color: #fff
 	padding: 10px
+	+r(700)
+		// position: relative
+		// margin: 0 auto  
+		width: 90% 
+		left: 0 
+		margin-left: 2% 
 %exit
 	font-family: Helvetica, Arial, sans-serif 
 	font-size: 18px
@@ -269,7 +275,7 @@ a
 			margin-top: -10px
 			+r(700)
 				margin: 0 auto
-				padding: 20px 0
+				padding-top: 20px 
 						
 			+clr 
 			.inner
@@ -285,16 +291,20 @@ a
 			position: relative
 			bottom: 25px
 			+r(700)
-				width: 100%
-				margin-top: 30px  
-				+clr
+				width: 80%
+				margin-top: 30px
+				padding-left: 55px
 			.blue
 				// +s(btn_lg)
+				// padding-right: 55px
 				margin-right: 15px
-				+r(700)
-					display: inline-block
-					float: left
-					margin-right: 0px
+				&.fb
+					+r(700)
+						margin-right: 0px 
+					+r(435)
+						margin-bottom: 0px   
+				+r(435)
+					margin-bottom: 10px 
 			span
 				font-family: "Helvetica", "Arial", sans-serif
 				font-weight: bold
@@ -313,12 +323,16 @@ a
 			padding-top: 20px 
 			margin-bottom: 20px
 			+clr 
+			+r(700)
+				width: 80%
+				margin-left: 55px 
 			.inner
-				padding-left: 20px   
 				span
 					font-family: "GothamRoundedBook" 
 					font-size: 16px 
 					color: #d5d5d5
+					+r(700)
+						display: none
 			.item
 				float: left
 				padding: 0px 3% 25px 3%
@@ -343,8 +357,10 @@ a
 					background-color: #a5a5a5
 					cursor: pointer 
 		&__foo
-			width: 100%
+			width: 80%
 			margin: 0 auto 
+			+r(700)
+				margin-left: 55px
 			.blue
 				margin-right: 15px
 			.cncl
@@ -375,6 +391,7 @@ a
 	.footer
 		width: 80%
 		margin: 0 auto
+		margin-top: 20px 
 		+r(700)
 			width: 100% 
 			+g(#e7ecec, #cbcbcb)
@@ -412,7 +429,10 @@ a
 			margin: 0  auto
 			width: 430px 
 			text-align: justify
-			span
+			+r(700)
+				+word-wrap
+				width: 90% !important  
+			p
 				font-family: "GothamRoundedBook"
 				font-size: 16px 
 				color: $text
@@ -434,6 +454,9 @@ a
 		// display: block
 		.msg
 			width: 505px
+			+r(700)
+				+word-wrap
+				width: 90% !important
 	.modal.select
 		@extend %modal
 		.exit
@@ -462,18 +485,28 @@ a
 			display: inline-block
 			margin: 5px
 			cursor: pointer
+			+r(700)
+				display: block
+				margin: 10px auto
 
 	.modal.select.album
-		// display: block
+		display: block
 		.cover
 			display: inline-block
 			cursor: pointer
+			+r(700)
+				display: block
+				margin: 10px auto
 			.photo
 				width: 165px 
 				height: 165px 
 				border: 1px solid #c5c5c5
 				display: inline-block
 				margin: 5px
+				+r(700)
+					display: block
+					margin: 0 auto 
+
 			p
 				font-family: Helvetica, Arial, sans-serif
 				font-size: 14px  
