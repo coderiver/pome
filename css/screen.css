@@ -132,7 +132,10 @@ a { color: white; text-decoration: none; }
 @media only screen and (max-width: 700px) { .out .content__foo { margin-left: 55px; } }
 .out .content__foo .blue { margin-right: 15px; }
 .out .content__foo .cncl { font-family: "Helvetica", "Arial", sans-serif; font-weight: bold; font-size: 15px; color: #6d6d6d; line-height: 36px; text-decoration: underline; background: transparent; cursor: pointer; }
+@media only screen and (max-width: 700px) { .out .content__watch { width: 80%; padding-left: 55px; } }
+@media only screen and (max-width: 700px) { .out .content__watch video { width: 100%; } }
 .out .content__watch video .play { background: url('../img/icons-s5a5ee6e5f0.png') 0 -807px no-repeat; width: 41px; height: 42px; display: inline-block; }
+@media only screen and (max-width: 700px) { .out .content__share { padding-left: 55px; } }
 .out .content__share .fb, .out .content__share .tw { display: inline-block; margin: 20px 12px 0px 0px; }
 .out .content__share .create { color: #00b2a9; font-family: "GothamRoundedMedium"; font-size: 14px; margin: 20px 0; }
 .out .content__share .add { width: 185px; }
