@@ -20,9 +20,9 @@
 		</div>
 		<div class="header__nav">
 			<ul class="dots">
+				<li><a href="#"><i></i></a></li>
+				<li><a href="#"><i></i></a></li>
 				<li><a href="#" class="is-active"><i></i></a></li>
-				<li><a href="#"><i></i></a></li>
-				<li><a href="#"><i></i></a></li>
 			</ul>
 		</div>
 	</div>
@@ -38,19 +38,18 @@
 	<div class="content">
 		<div class="content__watch">
 			<video width="420" height="290" controls>
-				<!-- <source src="movie.mp4" type="video/mp4"> -->
+				<div class="play"></div>
+				<source src="movie.mp4" type="video/mp4">
 				<!-- <source src="movie.ogg" type="video/ogg"> -->
 			Your browser does not support the video tag.
 			</video>
 		</div>
-
-		
-		<iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;layout=button" scrolling="no" frameborder="0" style="border:none; overflow:hidden;height: 20px;width: 55px;" allowTransparency="true"></iframe>
-<!-- 	<a href="http://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;layout=button"></a> -->
-		<a href="https://twitter.com/share" class="twitter-share-button" data-count="none">Tweet</a>
-		
-		<p class="create">Create and share another story.</p>
-		<input class="add blue" type="button" href="#" value="create another story">
+		<div class="content__share">
+			<iframe class="fb" src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;layout=button" scrolling="no" frameborder="0" style="border:none; overflow:hidden;height: 20px;width: 55px;" allowTransparency="true"></iframe>
+			<a href="https://twitter.com/share" class="twitter-share-button tw" data-count="none">Tweet</a>
+			<p class="create">Create and share another story.</p>
+			<input class="add blue" type="button" href="#" value="create another story">
+		</div>
 	</div>
 	<!-- END content -->
 
