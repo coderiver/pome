@@ -317,7 +317,7 @@ a
 			margin: 0 auto
 			width: 100%
 			min-height: 200px
-			max-height: 600px 
+			// max-height: 600px 
 			border: 1px solid #d1d1d1 
 			background: #FFF 
 			padding-top: 20px 
@@ -325,7 +325,8 @@ a
 			+clr 
 			+r(700)
 				width: 80%
-				margin-left: 55px 
+				margin-left: 55px
+				 
 			.inner
 				span
 					font-family: "GothamRoundedBook" 
@@ -403,8 +404,9 @@ a
 				&:first-child
 					float: left
 				&:nth-child(2)
-					border-left: 2px solid #c0c4c3
-					border-right: 2px solid #c0c4c3
+					+r(700)
+						border-left: 2px solid #c0c4c3
+						border-right: 2px solid #c0c4c3
 
 				&:last-child
 					padding-right: 0
@@ -415,9 +417,11 @@ a
 					width: 30%
 					height: 100%
 			a
-				color: #7f7f7f
-				text-shadow: 0 2px #fff
+				color: #000
 				font-family: "GothamRoundedBook"
+				+r(700)
+					color: #7f7f7f
+					text-shadow: 0 2px #fff
 	.modal.error
 		// display: block
 		@extend %modal
@@ -506,7 +510,6 @@ a
 				+r(700)
 					display: block
 					margin: 0 auto 
-
 			p
 				font-family: Helvetica, Arial, sans-serif
 				font-size: 14px  
