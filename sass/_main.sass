@@ -1,6 +1,14 @@
 // Normally mainpage styles
 $logo: #ffde00
 $text: #00b2a9
+=word-wrap() 
+	-ms-word-break: break-all
+	word-break: break-all
+	word-break: break-word
+	-webkit-hyphens: auto
+	-moz-hyphens: auto
+	hyphens: auto
+
 %modal
 	position: absolute
 	width: 680px
@@ -41,7 +49,9 @@ $text: #00b2a9
 	cursor: pointer
 	// padding: 0 20px 
 	+box-shadow(0px 0px 5px #bbbbbb)
-	+border-radius(15px)
+	+border-radius(10px)
+	+r(700)
+		// min-width: 0 
 .modal
 	display: none
 a
@@ -49,24 +59,45 @@ a
 	text-decoration: none 
 .out
 	width: 100%
-	// min-height: 100% 
 	+g(#fff, #c5f3f4)
+	+r(700)
+		// overflow: hidden
 	.header
+		width: 100% 
 		+clr
 		&__logo
-			+s(hearts)
-			a
-				font-family: "GothamRoundedMedium"
-				font-size: 18px 
-				position: relative
-				left: 17%
-				
-				i
-					+s(logo)
-					display: block
+			width: 100% 
+			img
+				display: none
+				+r(700)
+					max-width: 100%
+					height: auto
+					display: block 
+			.inn
+				+s(hearts)
+				max-width: 100% 
+				+r(700)
+					display: none
+					// height: auto 
+					width: 100%
+				a
+					font-family: "GothamRoundedMedium"
+					font-size: 18px 
 					position: relative
-					right: 5px 
+					left: 70px
+					// padding-left: 20px
+					// margin-left: 20px
+					+r(700)
+						display: none  
+					i
+						+s(logo)
+						display: block
+						position: relative
+						right: 5px
+						+r(700)
+							display: none 
 		&__nav
+			+clr
 			.dots
 				float: right
 				margin-right: 5% 					
@@ -80,12 +111,43 @@ a
 						i
 							+s(dot)
 							display: inline-block
+		&__mobile
+			display: none
+			+r(700)
+				width: 100%
+				display: block
+				.line
+					width: 100%
+					height: 20px
+					background: #959595
+				.nav
+					+clr
+					+g(#fff, #d8d8d8)
+					padding: 10px 20px
+					.humb
+						float: left
+						cursor: pointer
+						div
+							width: 45px
+							height: 3px
+							margin: 4px 0
+							background: #b2b2b2 
+
+					.log
+						float: right
+						line-height: auto
+						color: #a5a5a5
+						+text-shadow(0 2px #fff)
+						font-family: "GothamRoundedMedium"
+						font-size: 20px  
 	.step
 		margin: 0 auto 
 		width: 80% 
 		position: relative
 		right: 55px 
 		+clr
+		+r(700)
+			right: 0 
 		&__num
 			display: inline-block
 			float: left
@@ -104,11 +166,11 @@ a
 				color: $text
 				font-family: "GothamRoundedMedium"
 				font-size: 24px
-				font-weight: bold  
+				font-weight: bold
 			.foo
 				color: $text
 				font-family: "GothamRoundedMedium"
-				font-size: 19px 
+				font-size: 19px
 				font-weight: bold
 	.content
 		margin: 0 auto
@@ -118,23 +180,31 @@ a
 			margin-top: 15px 
 			+clr
 			.check
-				max-width: 50% 
-				// padding-left: 55px 
+				width: 50% 
 				float: left
+				+r(700)
+					width: 100%
 				&__inn
+					+r(700)
+						padding-left: 55px 
 					.about
 						width: 100%
 						margin-bottom: 25px 
 						p
 							color: $text
 							font-family: "GothamRoundedBook"
-							font-weight: lighter 
+							font-weight: lighter
 					.box
-						padding-bottom: 20px
+						padding-top: 20px
+						+clr
+						+r(700)
+							padding: 0 
 						label
 							position: relative
 							margin-left: 30px
 							cursor: pointer 
+							+r(700)
+								margin-left: 0px
 							input[type="checkbox"]
 								background-color: #b2b2b2 
 								-webkit-appearance: none
@@ -144,59 +214,95 @@ a
 								left: -30px
 								display: inline-block
 								background-color: #b2b2b2
+								+r(700)
+									left: -40px 
 								&:checked
 									background-color: #909090 
-
 							p
 								font-family: "GothamRoundedMedium"
 								color: $text
 								display: inline-block
-								// margin-left: 10px 
 								a
 									border-bottom: 1px solid #b3e9e7
 									color: $text
-								
+						.nxt
+							display: none
+							+r(700)
+								display: block
+								float: right
+								margin-left: 70px
+								margin-top: 3px  
 			.photo
 				width: 30% 
 				min-width: 265px
 				max-width: 317px
 				float: right
 				text-align: center
+				+r(700)
+					width: 20% 
+					min-width: 0 
+					text-align: right
+					position: relative
 				.inn
 					width: 100%
 					min-width: 265px
 					overflow: hidden 
 					border: 1px solid #c9cece 
 					+border-radius(20px, 20px)
+					+r(700)
+						display: none
 					img
 						float: right
+						
 				.nxt
-					margin-top: 25px 
+					margin-top: 25px
+					+r(700)
+						position: relative
+						float: right
+						margin-top: 157px 
+						// margin-right: 100px
+						// top: 85px
+						// left: 140px 
+						display: none
 		&__video
 			width: 100%
-			margin-top: -10px 
+			margin-top: -10px
+			+r(700)
+				margin: 0 auto
+				padding: 20px 0
+						
 			+clr 
 			.inner
 				width: 50%
-				// padding-left: 55px
+				+r(700)
+					width: 70%
+					padding-left: 15px
 				display: inline-block
 				video
 					width: 100%
-					.play
-						+s(play)
 		//step2
 		&__header
 			position: relative
 			bottom: 25px
+			+r(700)
+				width: 100%
+				margin-top: 30px  
+				+clr
 			.blue
 				// +s(btn_lg)
 				margin-right: 15px
+				+r(700)
+					display: inline-block
+					float: left
+					margin-right: 0px
 			span
 				font-family: "Helvetica", "Arial", sans-serif
 				font-weight: bold
 				font-size: 15px 
 				color: #6d6d6d 
 				line-height: 36px
+				+r(700)
+					display: none
 		&__field
 			margin: 0 auto
 			width: 100%
@@ -240,7 +346,6 @@ a
 			width: 100%
 			margin: 0 auto 
 			.blue
-				// +s(btn_lg)
 				margin-right: 15px
 			.cncl
 				font-family: "Helvetica", "Arial", sans-serif
@@ -251,8 +356,6 @@ a
 				text-decoration: underline
 				background: transparent
 				cursor: pointer 
-				 
-			// span
 		&__watch
 			video
 				.play
@@ -268,25 +371,35 @@ a
 				font-size: 14px 
 				margin: 20px 0
 			.add
-				// +s(btn_sdlg)
 				width: 185px 
-
 	.footer
 		width: 80%
-		margin: 0 auto 
+		margin: 0 auto
+		+r(700)
+			width: 100% 
+			+g(#e7ecec, #cbcbcb)
 		ul
-			padding: 25px 0 
 			text-align: center
 			li
-				text-align: center
 				display: inline-block
+				padding: 10px 0 
 				&:first-child
 					float: left
+				&:nth-child(2)
+					border-left: 2px solid #c0c4c3
+					border-right: 2px solid #c0c4c3
+
 				&:last-child
 					padding-right: 0
-					float: right 
+					float: right
+					+r(700)
+						+word-wrap
+				+r(700)
+					width: 30%
+					height: 100%
 			a
-				color: #000
+				color: #7f7f7f
+				text-shadow: 0 2px #fff
 				font-family: "GothamRoundedBook"
 	.modal.error
 		// display: block
