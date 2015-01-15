@@ -35,6 +35,21 @@ $text: #00b2a9
 	font-size: 22px 
 	color: $text
 	margin: 35px 0 25px 0
+.dots
+	float: right
+	li
+		display: inline-block
+		a
+			i
+				width: 20px
+				height: 20px
+				border: 1px solid $text
+				+border-radius(50%) 
+				display: inline-block
+		.is-active
+			i
+				background: #FFDE00 	
+				display: inline-block
 .blue
 	// +s(btn)
 	width: auto
@@ -42,15 +57,14 @@ $text: #00b2a9
 	// min-height: 100px
 	max-height: 32px   
 	+s(btn_wing)
+	// +background-size(contain 0 0)
 	background-color: $text
 	padding: 0px 20px
 	color: #fff
 	font-weight: bold
 	font-size: 15px 
-	// vertical-align: top
 	cursor: pointer
-	// padding: 0 20px 
-	+box-shadow(0px 0px 5px #bbbbbb)
+	// +box-shadow(0px 0px 5px #bbbbbb)
 	+border-radius(10px)
 	+r(700)
 		// min-width: 0 
@@ -60,23 +74,31 @@ a
 	color: white
 	text-decoration: none 
 .out
+	.nxt-m
+		display: none
+		+r(700)
+			display: block
+			margin-top: 20px 
+			width: 100%
 	width: 100%
 	min-height: 100% 
 	+g(#fff, #c5f3f4)
-	+r(700)
-		// overflow: hidden
 	.header
 		width: 100% 
 		+clr
 		&__logo
-			// width: 80% 
 			float: left
+			+r(700)
+				width: 70% 
+				z-index: 999
+				display: inline-block  	
+				margin-top: -71px  
 			img
 				display: none
 				+r(700)
 					max-width: 100%
 					height: auto
-					display: block 
+					display: block
 			.inn
 				+s(hearts)
 				max-width: 100% 
@@ -103,7 +125,9 @@ a
 		&__lang
 			float: right
 			margin-right: 5%
-			margin-top: 25px  
+			margin-top: 25px 
+			+r(700)
+				display: none 
 			ul
 				li
 					display: inline-block
@@ -115,40 +139,62 @@ a
 						color: $text
 						font-family: "GothamRoundedMedium"
 						font-weight: bold  
-		&__nav
+		&__bar
+			display: none
 			+clr
-			width: 80%
-			margin: 0 auto  
-			
-		&__mobile
+			+r(700)
+				display: block
+				float: right
+				margin-right: 5%
+				margin: 30px 5% 0 0 
+		// &__mobile
+		// 	display: none
+		// 	+r(700)
+		// 		width: 100%
+		// 		display: block
+		// 		.line
+		// 			width: 100%
+		// 			height: 20px
+		// 			background: #959595
+		// 		.nav
+		// 			+clr
+		// 			+g(#fff, #d8d8d8)
+		// 			padding: 10px 20px
+		// 			.humb
+		// 				float: left
+		// 				cursor: pointer
+		// 				div
+		// 					width: 45px
+		// 					height: 3px
+		// 					margin: 4px 0
+		// 					background: #b2b2b2 
+
+		// 			.log
+		// 				float: right
+		// 				line-height: auto
+		// 				color: #a5a5a5
+		// 				+text-shadow(0 2px #fff)
+		// 				font-family: "GothamRoundedMedium"
+		// 				font-size: 20px
+		&__humb
 			display: none
 			+r(700)
-				width: 100%
 				display: block
-				.line
-					width: 100%
-					height: 20px
-					background: #959595
-				.nav
-					+clr
-					+g(#fff, #d8d8d8)
-					padding: 10px 20px
-					.humb
-						float: left
-						cursor: pointer
-						div
-							width: 45px
-							height: 3px
-							margin: 4px 0
-							background: #b2b2b2 
+				width: 60%  
+				float: right
+				background: #85d3cf
+				+clr
+				.inn
+					padding: 20px 0
+					margin-right: 10% 
+					float: right
+					div
+						width: 30px
+						margin: 4px 0
+						height: 5px
+						background: $text 
+						+border-radius(5px)
 
-					.log
-						float: right
-						line-height: auto
-						color: #a5a5a5
-						+text-shadow(0 2px #fff)
-						font-family: "GothamRoundedMedium"
-						font-size: 20px  
 	.step
 		margin: 0 auto 
 		width: 80% 
@@ -185,6 +231,8 @@ a
 				width: 40%
 				float: right 
 				+clr
+				+r(700)
+					display: none
 				.dots
 					float: right
 					// position: relative
@@ -223,6 +271,8 @@ a
 						font-size: 12px
 						font-weight: bold
 						list-style-type: disc
+						+r(700)
+							display: none
 						li
 							margin-left: 20px 
 							color: $text 
@@ -237,7 +287,7 @@ a
 						padding-top: 20px
 						+clr
 						+r(700)
-							padding: 0 
+							display: none 
 						label
 							position: relative
 							margin-left: 30px
@@ -267,20 +317,19 @@ a
 								a.rules
 									border-bottom: 1px solid #b3e9e7
 									color: $text
-						.nxt-m
+						&-m
 							display: none
 							+r(700)
 								display: block
-								float: right
-								margin-left: 70px
-								margin-top: 3px
-							&.vis
-								display: block
-								float: left
-								margin-top: 10px
-								+r(700)
-									float: right 
-			.photo
+								label
+									input[type="checkbox"]
+										padding: 10px
+							
+						.nxt
+							display: block
+							float: left
+							margin-top: 10px
+			.video
 				width: 45% 
 				float: right
 				text-align: center
@@ -291,8 +340,6 @@ a
 					position: relative
 				.inn
 					width: 100%
-					// position: relative
-					// bottom: 60px  
 					+r(700)
 						display: none
 					video
@@ -446,7 +493,6 @@ a
 		margin-top: 20px 
 		+r(700)
 			width: 100% 
-			+g(#e7ecec, #cbcbcb)
 		ul
 			text-align: center
 			li
@@ -456,9 +502,8 @@ a
 					float: left
 				&:nth-child(2)
 					+r(700)
-						border-left: 2px solid #c0c4c3
-						border-right: 2px solid #c0c4c3
-
+						border-left: 1px solid $text
+						border-right: 1px solid $text
 				&:last-child
 					padding-right: 0
 					float: right
@@ -466,13 +511,12 @@ a
 						+word-wrap
 				+r(700)
 					width: 30%
-					height: 100%
+					padding: 0
 			a
 				color: #000
 				font-family: "GothamRoundedBook"
 				+r(700)
-					color: #7f7f7f
-					text-shadow: 0 2px #fff
+					color: $text
 	.modal.error
 		// display: block
 		@extend %modal
@@ -570,7 +614,6 @@ a
 				color: #5b5b5b
 				
 	.modal.edit-photo
-		display: block
 		@extend %modal
 		top: 20%
 		+r(700)
@@ -582,10 +625,8 @@ a
 			text-align: center
 			display: table
 			text-align: center
-			
 			.inn
 				width: 80%
-				// display: inline-block
 				display: table-cell
 				vertical-align: middle
 				img
@@ -594,6 +635,7 @@ a
 			.arr_l, .arr_r
 				display: table-cell
 				vertical-align: middle
+				cursor: pointer
 			.arr_l
 				.inn
 					+s(arr-l)
@@ -618,8 +660,8 @@ a
 					margin-left: 10px 
 				.stats
 					.rate
-						// width: 23px 
 						border: 1px dotted #bdbcbc
+						cursor: pointer
 						&.m
 							padding: 5px 10px
 						&.p
@@ -628,11 +670,12 @@ a
 					span
 						padding: 5px
 						border: 1px dotted #bdbcbc
+						cursor: pointer
 						i
 							+s(rotate)
 							display: inline-block
 							position: relative
-							top: 3px
+							top: 4px
 				input
 					padding: 5px 10px
 					color: #fff
@@ -640,7 +683,8 @@ a
 					font-weight: bold
 					+border-radius(20px) 
 					background: $text
-					margin-left: 10px  
+					margin-left: 10px 
+					cursor: pointer  
 		
 
 			
