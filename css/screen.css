@@ -132,10 +132,10 @@ a { color: white; text-decoration: none; }
 @media only screen and (max-width: 435px) { .out .content__header .blue { margin-bottom: 10px; } }
 .out .content__header span { font-family: "Helvetica", "Arial", sans-serif; font-weight: bold; font-size: 15px; color: #00b2a9; line-height: 36px; }
 @media only screen and (max-width: 700px) { .out .content__header span { display: none; } }
-.out .content__field { margin: 0 auto; width: 100%; min-height: 200px; border: 1px solid #d1d1d1; background: #FFF; padding-top: 20px; margin-bottom: 20px; *zoom: 1; }
+.out .content__field { margin: 0 auto; width: 100%; border: 1px solid #d1d1d1; background: #FFF; padding-top: 20px; margin-bottom: 20px; *zoom: 1; }
 .out .content__field:after { content: " "; display: table; clear: both; }
 @media only screen and (max-width: 700px) { .out .content__field { width: 80%; margin-left: 55px; } }
-.out .content__field .inner { text-align: center; margin-top: 100px; }
+.out .content__field .inner { text-align: center; margin-top: 120px; padding-bottom: 70px; }
 .out .content__field .inner span { font-family: "GothamRoundedBook"; font-size: 16px; color: #d5d5d5; }
 @media only screen and (max-width: 700px) { .out .content__field .inner span { display: none; } }
 .out .content__field .item { float: left; padding: 0px 3% 25px 3%; text-align: center; }
