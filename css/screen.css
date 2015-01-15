@@ -145,6 +145,7 @@ a { color: white; text-decoration: none; }
 .out .content__foo { width: 100%; margin: 0 auto; }
 @media only screen and (max-width: 700px) { .out .content__foo { margin-left: 55px; width: 80%; } }
 .out .content__foo .blue { margin-right: 15px; }
+.out .content__foo .blue.opac { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50); opacity: 0.5; }
 .out .content__foo .cncl { font-family: "Helvetica", "Arial", sans-serif; font-weight: bold; font-size: 15px; color: #6d6d6d; line-height: 36px; text-decoration: underline; background: transparent; cursor: pointer; }
 @media only screen and (max-width: 700px) { .out .content__watch { width: 80%; padding-left: 55px; } }
 @media only screen and (max-width: 700px) { .out .content__watch video { width: 100%; } }
