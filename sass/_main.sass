@@ -25,13 +25,9 @@ $text: #00b2a9
 		left: 0 
 		margin-left: 2% 
 %exit
-	font-family: Helvetica, Arial, sans-serif 
-	font-size: 18px
-	font-weight: bold
-	color: #686868
-	background-color: #fff 
 	cursor: pointer
 	float: right
+	+s(close)
 	+clr
 %modal_header
 	font-family: "GothamRoundedMedium"
@@ -350,7 +346,7 @@ a
 				font-family: "Helvetica", "Arial", sans-serif
 				font-weight: bold
 				font-size: 15px 
-				color: #6d6d6d 
+				color: $text 
 				line-height: 36px
 				+r(700)
 					display: none
@@ -369,6 +365,8 @@ a
 				margin-left: 55px
 				 
 			.inner
+				text-align: center
+				margin-top: 100px 
 				span
 					font-family: "GothamRoundedBook" 
 					font-size: 16px 
@@ -399,10 +397,11 @@ a
 					background-color: #a5a5a5
 					cursor: pointer 
 		&__foo
-			width: 80%
+			width: 100%
 			margin: 0 auto 
 			+r(700)
 				margin-left: 55px
+				width: 80%
 			.blue
 				margin-right: 15px
 			.cncl
@@ -531,7 +530,7 @@ a
 			float: right
 			
 	.modal.select.photo
-		// display: block
+		display: block
 		.photo
 			width: 165px 
 			height: 165px 
@@ -544,7 +543,7 @@ a
 				margin: 10px auto
 
 	.modal.select.album
-		display: block
+		// display: block
 		.cover
 			display: inline-block
 			cursor: pointer
