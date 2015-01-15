@@ -568,6 +568,80 @@ a
 				font-size: 14px  
 				font-weight: bold
 				color: #5b5b5b
+				
+	.modal.edit-photo
+		display: block
+		@extend %modal
+		top: 20%
+		+r(700)
+			top: 40%
+		.top
+			width: 100%
+			padding-top: 15px 
+			+clr
+			text-align: center
+			display: table
+			text-align: center
+			
+			.inn
+				width: 80%
+				// display: inline-block
+				display: table-cell
+				vertical-align: middle
+				img
+					max-width: 100%
+					border: 1px solid #bdbcbc
+			.arr_l, .arr_r
+				display: table-cell
+				vertical-align: middle
+			.arr_l
+				.inn
+					+s(arr-l)
+			.arr_r
+				.inn
+					+s(arr-r)
+					float: right
+			div
+				display: table-cell
+				vertical-align: middle
+		.foo
+			width: 80% 
+			color: $text
+			margin: 0 auto
+			padding-top: 13px 
+			+clr
+			.inn
+				float: right
+				font-family: "GothamRoundedBook"
+				font-weight: bold
+				span
+					margin-left: 10px 
+				.stats
+					.rate
+						// width: 23px 
+						border: 1px dotted #bdbcbc
+						&.m
+							padding: 5px 10px
+						&.p
+							padding: 5px 8px 
+				.rotate
+					span
+						padding: 5px
+						border: 1px dotted #bdbcbc
+						i
+							+s(rotate)
+							display: inline-block
+							position: relative
+							top: 3px
+				input
+					padding: 5px 10px
+					color: #fff
+					font-family: "GothamRoundedBook"
+					font-weight: bold
+					+border-radius(20px) 
+					background: $text
+					margin-left: 10px  
+		
 
 			
 
