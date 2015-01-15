@@ -158,6 +158,7 @@ a { color: white; text-decoration: none; }
 .out .modal.error.size .msg { width: 505px; }
 @media only screen and (max-width: 700px) { .out .modal.error.size .msg { -ms-word-break: break-all; word-break: break-all; word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; width: 90% !important; } }
 .out .modal.select .arr_l, .out .modal.select .arr_r { border: 15px solid transparent; display: inline-block; margin-top: 65px; cursor: pointer; }
+@media only screen and (max-width: 700px) { .out .modal.select .arr_l, .out .modal.select .arr_r { display: none; } }
 .out .modal.select .arr_l { border-right: 15px solid #3a3a3a; float: left; }
 .out .modal.select .arr_r { border-left: 15px solid #3a3a3a; float: right; }
 .out .modal.select.photo .photo { width: 165px; height: 165px; border: 1px solid #c5c5c5; display: inline-block; margin: 5px; cursor: pointer; }
