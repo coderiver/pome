@@ -65,6 +65,7 @@ a
 	text-decoration: none 
 .out
 	width: 100%
+	min-height: 100% 
 	+g(#fff, #c5f3f4)
 	+r(700)
 		// overflow: hidden
@@ -72,7 +73,8 @@ a
 		width: 100% 
 		+clr
 		&__logo
-			width: 100% 
+			// width: 80% 
+			float: left
 			img
 				display: none
 				+r(700)
@@ -101,22 +103,27 @@ a
 						position: relative
 						right: 5px
 						+r(700)
-							display: none 
-		&__nav
-			+clr
-			.dots
-				float: right
-				margin-right: 5% 					
+							display: none
+		&__lang
+			float: right
+			margin-right: 5%
+			margin-top: 25px  
+			ul
 				li
 					display: inline-block
-					.is-active
-						i
-							+s(dot_a)
-							display: inline-block
+					padding: 0 6px
+					&:nth-child(2)
+						border-right: 2px solid $text
+						border-left: 2px solid $text
 					a
-						i
-							+s(dot)
-							display: inline-block
+						color: $text
+						font-family: "GothamRoundedMedium"
+						font-weight: bold  
+		&__nav
+			+clr
+			width: 80%
+			margin: 0 auto  
+			
 		&__mobile
 			display: none
 			+r(700)
@@ -167,17 +174,38 @@ a
 
 		&__desc
 			padding-left: 55px
-			padding-top: 35px  
+			padding-top: 35px 
+			width: 100% 
+			+clr
+			+r(700)
+				width: 80% 
 			.about
 				color: $text
 				font-family: "GothamRoundedMedium"
 				font-size: 24px
 				font-weight: bold
-			.foo
-				color: $text
-				font-family: "GothamRoundedMedium"
-				font-size: 19px
-				font-weight: bold
+
+			.bar
+				width: 40%
+				float: right 
+				+clr
+				.dots
+					float: right
+					// position: relative
+					// top: 50px 
+					li
+						display: inline-block
+						a
+							i
+								width: 20px
+								height: 20px
+								border: 1px solid $text
+								+border-radius(50%) 
+								display: inline-block
+						.is-active
+							i
+								background: #FFDE00 	
+								display: inline-block
 	.content
 		margin: 0 auto
 		width: 80%
@@ -192,7 +220,16 @@ a
 					width: 100%
 				&__inn
 					+r(700)
-						padding-left: 55px 
+						padding-left: 55px
+					.hi
+						color: $text
+						font-family: "GothamRoundedMedium"
+						font-size: 12px
+						font-weight: bold
+						list-style-type: disc
+						li
+							margin-left: 20px 
+							color: $text 
 					.about
 						width: 100%
 						margin-bottom: 25px 
@@ -212,54 +249,60 @@ a
 							+r(700)
 								margin-left: 0px
 							input[type="checkbox"]
-								background-color: #b2b2b2 
 								-webkit-appearance: none
-								background-color: #b2b2b2 
-								padding: 11px
+								padding: 7px
 								position: absolute
 								left: -30px
 								display: inline-block
-								background-color: #b2b2b2
+								border: 1px solid $text
+								+border-radius(50%)
+								cursor: pointer 
+
 								+r(700)
 									left: -40px 
 								&:checked
-									background-color: #909090 
+									background-color: #ffde00 
 							p
 								font-family: "GothamRoundedMedium"
 								color: $text
 								display: inline-block
 								a
+									color: #005abb
+								a.rules
 									border-bottom: 1px solid #b3e9e7
 									color: $text
-						.nxt
+						.nxt-m
 							display: none
 							+r(700)
 								display: block
 								float: right
 								margin-left: 70px
-								margin-top: 3px  
+								margin-top: 3px
+							&.vis
+								display: block
+								float: left
+								margin-top: 10px
+								+r(700)
+									float: right 
 			.photo
-				width: 30% 
-				min-width: 265px
-				max-width: 317px
+				width: 45% 
 				float: right
 				text-align: center
+				+clr
 				+r(700)
 					width: 20% 
 					min-width: 0 
-					text-align: right
 					position: relative
 				.inn
 					width: 100%
-					min-width: 265px
-					overflow: hidden 
-					border: 1px solid #c9cece 
-					+border-radius(20px, 20px)
+					// position: relative
+					// bottom: 60px  
 					+r(700)
 						display: none
-					img
+					video
+						max-width: 100%
+						height: auto 
 						float: right
-						
 				.nxt
 					margin-top: 25px
 					+r(700)
@@ -295,8 +338,6 @@ a
 				margin-top: 30px
 				padding-left: 55px
 			.blue
-				// +s(btn_lg)
-				// padding-right: 55px
 				margin-right: 15px
 				&.fb
 					+r(700)
