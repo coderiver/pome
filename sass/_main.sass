@@ -375,8 +375,11 @@ a
 				margin-top: 30px
 				// padding-left: 55px
 				text-align: center
+				
 			.blue
 				margin-right: 15px
+				+r(700)
+					display: none
 				&.fb
 					+r(700)
 						margin-right: 0px 
@@ -616,7 +619,7 @@ a
 		.arr_l, .arr_r
 			border: 15px solid transparent
 			display: inline-block
-			margin-top: 65px
+			// margin-top: 65px
 			cursor: pointer
 			+r(700)
 				display: none
@@ -642,30 +645,74 @@ a
 				margin: 10px auto
 
 	.modal.select.album
-		// display: block
-		.cover
-			display: inline-block
-			cursor: pointer
-			+r(700)
-				display: block
-				margin: 10px auto
-			.photo
-				width: 165px 
-				height: 165px 
-				border: 1px solid #c5c5c5
-				display: inline-block
-				margin: 5px
+		display: block
+		+r(700)
+			h3
+				font-size: 14px 
+				text-align: left
+				margin: 0 0 15px 0
+		.bot
+			display: table
+			// margin: 0 auto
+			width: 100% 
+			padding-top: 15px 
+			// text-align: center
+			// vertical-align: middle
+			text-align: center
+			.arr_l, .arr_r
+				display: table-cell 
+				vertical-align: middle
+				margin-top: 65px 
+				// width: 20%
 				+r(700)
-					display: block
-					margin: 0 auto 
-			p
-				font-family: Helvetica, Arial, sans-serif
-				font-size: 14px  
-				font-weight: bold
-				color: #5b5b5b
+					display: none
+			.inn
+				width: 80% 
+				display: table-cell
+				vertical-align: middle
+				.cover
+					// display: inline-block
+					float: left
+					cursor: pointer
+					+r(700)
+						display: block
+						width: 100% 
+						display: table
+						vertical-align: middle 
+						text-align: left
+						margin-bottom: 10px 
+					.photo
+						width: 165px 
+						height: auto
+						display: inline-block
+						margin: 5px
+						+r(700)
+							display: table-cell
+							width: 40% 
+							vertical-align: middle
+						img
+							max-width: 100%
+							border: 1px solid #c5c5c5
+					.info
+						font-family: Helvetica, Arial, sans-serif
+						font-size: 14px  
+						font-weight: bold
+						color: #5b5b5b
+						+r(700)
+							padding-left: 10px 
+							display: table-cell
+							vertical-align: middle
+							color: $text
+							font-family: "GothamRoundedMedium"
+						.con
+							+r(700)
+								font-weight: normal
+								font-family: "GothamRoundedBook"
+							 
+					
 				
 	.modal.edit-photo
-		display: block
+		// display: block
 		@extend %modal
 		top: 20%
 		+r(700)
