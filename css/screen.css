@@ -32,7 +32,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .out .modal.error, .out .modal.error.type, .out .modal.select, .out .modal.edit-photo { position: absolute; width: 680px; top: 40%; left: 50%; margin-left: -340px; text-align: center; background-color: #fff; padding: 10px; }
 @media only screen and (max-width: 700px) { .out .modal.error, .out .modal.error.type, .out .modal.select, .out .modal.edit-photo { width: 90%; left: 0; margin-left: 2%; } }
 
-.out .modal.error .exit, .out .modal.error.type .exit, .out .modal.select .exit { cursor: pointer; float: right; background: url('../img/icons-s2603e709db.png') 0 -194px no-repeat; width: 19px; height: 20px; *zoom: 1; }
+.out .modal.error .exit, .out .modal.error.type .exit, .out .modal.select .exit { cursor: pointer; float: right; background: url('../img/icons-sa4ec448cdc.png') 0 -194px no-repeat; width: 19px; height: 20px; *zoom: 1; }
 .out .modal.error .exit:after, .out .modal.error.type .exit:after, .out .modal.select .exit:after { content: " "; display: table; clear: both; }
 
 .out .modal.error h3, .out .modal.error.type h3, .out .modal.select h3 { font-family: "GothamRoundedMedium"; font-weight: bold; font-size: 22px; color: #00b2a9; margin: 35px 0 25px 0; }
@@ -42,7 +42,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .dots li a i { width: 20px; height: 20px; border: 1px solid #00b2a9; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; display: inline-block; }
 .dots li .is-active i { background: #FFDE00; display: inline-block; }
 
-.blue { width: auto; min-width: 130px; max-height: 32px; background: url('../img/icons-s2603e709db.png') 0 -154px no-repeat; width: 22px; height: 30px; background-color: #00b2a9; padding: 0px 20px; color: #fff; font-weight: bold; font-size: 15px; cursor: pointer; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
+.blue { width: auto; min-width: 130px; max-height: 32px; background: url('../img/icons-sa4ec448cdc.png') 0 -154px no-repeat; width: 22px; height: 30px; background-color: #00b2a9; padding: 0px 20px; color: #fff; font-weight: bold; font-size: 15px; cursor: pointer; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
 
 .modal { display: none; }
 
@@ -57,11 +57,11 @@ a { color: white; text-decoration: none; }
 @media only screen and (max-width: 700px) { .out .header__logo { width: 70%; z-index: 999; display: inline-block; margin-top: -71px; } }
 .out .header__logo img { display: none; }
 @media only screen and (max-width: 700px) { .out .header__logo img { max-width: 100%; height: auto; display: block; } }
-.out .header__logo .inn { background: url('../img/icons-s2603e709db.png') 0 -322px no-repeat; width: 466px; height: 212px; max-width: 100%; }
+.out .header__logo .inn { background: url('../img/icons-sa4ec448cdc.png') 0 -322px no-repeat; width: 466px; height: 212px; max-width: 100%; }
 @media only screen and (max-width: 700px) { .out .header__logo .inn { display: none; width: 100%; } }
 .out .header__logo .inn a { font-family: "GothamRoundedMedium"; font-size: 18px; position: relative; left: 70px; }
 @media only screen and (max-width: 700px) { .out .header__logo .inn a { display: none; } }
-.out .header__logo .inn a i { background: url('../img/icons-s2603e709db.png') 0 -544px no-repeat; width: 172px; height: 101px; display: block; position: relative; right: 5px; }
+.out .header__logo .inn a i { background: url('../img/icons-sa4ec448cdc.png') 0 -544px no-repeat; width: 172px; height: 101px; display: block; position: relative; right: 5px; }
 @media only screen and (max-width: 700px) { .out .header__logo .inn a i { display: none; } }
 .out .header__lang { float: right; margin-right: 5%; margin-top: 25px; }
 @media only screen and (max-width: 700px) { .out .header__lang { display: none; } }
@@ -171,7 +171,7 @@ a { color: white; text-decoration: none; }
 .out .content__foo .cncl { font-family: "Helvetica", "Arial", sans-serif; font-weight: bold; font-size: 15px; color: #6d6d6d; line-height: 36px; text-decoration: underline; background: transparent; cursor: pointer; }
 @media only screen and (max-width: 700px) { .out .content__watch { width: 80%; padding-left: 55px; } }
 @media only screen and (max-width: 700px) { .out .content__watch video { width: 100%; } }
-.out .content__watch video .play { background: url('../img/icons-s2603e709db.png') 0 -991px no-repeat; width: 41px; height: 42px; display: inline-block; }
+.out .content__watch video .play { background: url('../img/icons-sa4ec448cdc.png') 0 -991px no-repeat; width: 41px; height: 42px; display: inline-block; }
 @media only screen and (max-width: 700px) { .out .content__share { padding-left: 55px; } }
 .out .content__share .fb, .out .content__share .tw { display: inline-block; margin: 20px 12px 0px 0px; }
 .out .content__share .create { color: #00b2a9; font-family: "GothamRoundedMedium"; font-size: 14px; margin: 20px 0; }
@@ -205,23 +205,35 @@ a { color: white; text-decoration: none; }
 .out .modal.select.album .cover .photo { width: 165px; height: 165px; border: 1px solid #c5c5c5; display: inline-block; margin: 5px; }
 @media only screen and (max-width: 700px) { .out .modal.select.album .cover .photo { display: block; margin: 0 auto; } }
 .out .modal.select.album .cover p { font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; color: #5b5b5b; }
-.out .modal.edit-photo { top: 20%; }
+.out .modal.edit-photo { display: block; top: 20%; }
 @media only screen and (max-width: 700px) { .out .modal.edit-photo { top: 40%; } }
-.out .modal.edit-photo .top { width: 100%; padding-top: 15px; *zoom: 1; text-align: center; display: table; text-align: center; }
+.out .modal.edit-photo .top { width: 100%; padding-top: 15px; *zoom: 1; display: table; text-align: center; }
 .out .modal.edit-photo .top:after { content: " "; display: table; clear: both; }
+@media only screen and (max-width: 700px) { .out .modal.edit-photo .top { display: block; } }
 .out .modal.edit-photo .top .inn { width: 80%; display: table-cell; vertical-align: middle; }
+@media only screen and (max-width: 700px) { .out .modal.edit-photo .top .inn { width: 100%; } }
 .out .modal.edit-photo .top .inn img { max-width: 100%; border: 1px solid #bdbcbc; }
 .out .modal.edit-photo .top .arr_l, .out .modal.edit-photo .top .arr_r { display: table-cell; vertical-align: middle; cursor: pointer; }
-.out .modal.edit-photo .top .arr_l .inn { background: url('../img/icons-s2603e709db.png') 0 0 no-repeat; width: 30px; height: 67px; }
-.out .modal.edit-photo .top .arr_r .inn { background: url('../img/icons-s2603e709db.png') 0 -77px no-repeat; width: 30px; height: 67px; float: right; }
+.out .modal.edit-photo .top .arr_l .inn { background: url('../img/icons-sa4ec448cdc.png') 0 0 no-repeat; width: 30px; height: 67px; }
+@media only screen and (max-width: 700px) { .out .modal.edit-photo .top .arr_l .inn { float: left; } }
+.out .modal.edit-photo .top .arr_r .inn { background: url('../img/icons-sa4ec448cdc.png') 0 -77px no-repeat; width: 30px; height: 67px; float: right; }
 .out .modal.edit-photo .top div { display: table-cell; vertical-align: middle; }
 .out .modal.edit-photo .foo { width: 80%; color: #00b2a9; margin: 0 auto; padding-top: 13px; *zoom: 1; }
 .out .modal.edit-photo .foo:after { content: " "; display: table; clear: both; }
 .out .modal.edit-photo .foo .inn { float: right; font-family: "GothamRoundedBook"; font-weight: bold; }
-.out .modal.edit-photo .foo .inn span { margin-left: 10px; }
+@media only screen and (max-width: 700px) { .out .modal.edit-photo .foo .inn { float: none; } }
+.out .modal.edit-photo .foo .inn span, .out .modal.edit-photo .foo .inn p { margin-left: 10px; }
+@media only screen and (max-width: 700px) { .out .modal.edit-photo .foo .inn span, .out .modal.edit-photo .foo .inn p { margin-right: 5px; } }
 .out .modal.edit-photo .foo .inn .stats .rate { border: 1px dotted #bdbcbc; cursor: pointer; }
+@media only screen and (max-width: 700px) { .out .modal.edit-photo .foo .inn .stats .rate.m, .out .modal.edit-photo .foo .inn .stats .rate.p { color: #fff; background: #00b2a9; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; font-size: 25px; position: relative; top: 3px; } }
 .out .modal.edit-photo .foo .inn .stats .rate.m { padding: 5px 10px; }
+@media only screen and (max-width: 700px) { .out .modal.edit-photo .foo .inn .stats .rate.m { padding: 0 9px; } }
 .out .modal.edit-photo .foo .inn .stats .rate.p { padding: 5px 8px; }
+@media only screen and (max-width: 700px) { .out .modal.edit-photo .foo .inn .stats .rate.p { padding: 0 6px; } }
+.out .modal.edit-photo .foo .inn .rotate { display: inline-block; }
 .out .modal.edit-photo .foo .inn .rotate span { padding: 5px; border: 1px dotted #bdbcbc; cursor: pointer; }
-.out .modal.edit-photo .foo .inn .rotate span i { background: url('../img/icons-s2603e709db.png') 0 -1043px no-repeat; width: 16px; height: 16px; display: inline-block; position: relative; top: 4px; }
+@media only screen and (max-width: 700px) { .out .modal.edit-photo .foo .inn .rotate span { background: #00b2a9; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; border: 0; padding: 9px; position: relative; } }
+.out .modal.edit-photo .foo .inn .rotate span i { background: url('../img/icons-sa4ec448cdc.png') 0 -1069px no-repeat; width: 16px; height: 16px; display: inline-block; position: relative; top: 4px; }
+@media only screen and (max-width: 700px) { .out .modal.edit-photo .foo .inn .rotate span i { background: url('../img/icons-sa4ec448cdc.png') 0 -1043px no-repeat; width: 16px; height: 16px; } }
 .out .modal.edit-photo .foo .inn input { padding: 5px 10px; color: #fff; font-family: "GothamRoundedBook"; font-weight: bold; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; background: #00b2a9; margin-left: 10px; cursor: pointer; }
+@media only screen and (max-width: 700px) { .out .modal.edit-photo .foo .inn input { height: 30px; max-height: 32px; background: url('../img/icons-sa4ec448cdc.png') 0 -154px no-repeat; width: 22px; height: 30px; background-color: #00b2a9; font-size: 15px; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; margin-top: 10px; width: 100%; margin-left: 0; } }

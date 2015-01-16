@@ -641,6 +641,7 @@ a
 				color: #5b5b5b
 				
 	.modal.edit-photo
+		display: block
 		@extend %modal
 		top: 20%
 		+r(700)
@@ -649,13 +650,16 @@ a
 			width: 100%
 			padding-top: 15px 
 			+clr
-			text-align: center
 			display: table
 			text-align: center
+			+r(700)
+				display: block
 			.inn
 				width: 80%
 				display: table-cell
 				vertical-align: middle
+				+r(700)
+					width: 100%
 				img
 					max-width: 100%
 					border: 1px solid #bdbcbc
@@ -666,6 +670,8 @@ a
 			.arr_l
 				.inn
 					+s(arr-l)
+					+r(700)
+						float: left
 			.arr_r
 				.inn
 					+s(arr-r)
@@ -683,26 +689,53 @@ a
 				float: right
 				font-family: "GothamRoundedBook"
 				font-weight: bold
-				span
-					margin-left: 10px 
+				+r(700)
+					float: none
+				span, p
+					margin-left: 10px
+					+r(700)
+						margin-right: 5px  
 				.stats
 					.rate
 						border: 1px dotted #bdbcbc
 						cursor: pointer
+						+r(700)
+							&.m, &.p
+								color: #fff
+								background: $text
+								+border-radius(10px)
+								font-size: 25px
+								position: relative
+								top: 3px 
 						&.m
 							padding: 5px 10px
+							+r(700)
+								padding: 0 9px 
 						&.p
-							padding: 5px 8px 
+							padding: 5px 8px
+							+r(700)
+								padding: 0 6px 
+						
 				.rotate
+					display: inline-block
 					span
 						padding: 5px
 						border: 1px dotted #bdbcbc
 						cursor: pointer
+						+r(700)
+							background: $text
+							+border-radius(10px)
+							border: 0
+							padding: 9px 
+							position: relative
+							// bottom: 3px 
 						i
 							+s(rotate)
 							display: inline-block
 							position: relative
 							top: 4px
+							+r(700)
+								+s(rotate-w)
 				input
 					padding: 5px 10px
 					color: #fff
@@ -711,7 +744,17 @@ a
 					+border-radius(20px) 
 					background: $text
 					margin-left: 10px 
-					cursor: pointer  
+					cursor: pointer
+					+r(700)
+						height: 30px
+						max-height: 32px   
+						+s(btn_wing)
+						background-color: $text
+						font-size: 15px 
+						+border-radius(10px) 
+						margin-top: 10px 
+						width: 100%
+						margin-left: 0
 		
 
 			
