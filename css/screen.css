@@ -198,19 +198,21 @@ a { color: white; text-decoration: none; }
 @media only screen and (max-width: 700px) { .out .modal.error .msg { -ms-word-break: break-all; word-break: break-all; word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; width: 90% !important; } }
 .out .modal.error .msg p { font-family: "GothamRoundedBook"; font-size: 16px; color: #00b2a9; }
 .out .modal.error .blue { margin: 60px 0 30px 0; width: 180px; }
+@media only screen and (max-width: 700px) { .out .modal.error .blue { width: 100%; } }
 .out .modal.error.type .msg { width: 430px; }
 .out .modal.error.size .msg { width: 505px; }
 @media only screen and (max-width: 700px) { .out .modal.error.size .msg { -ms-word-break: break-all; word-break: break-all; word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; width: 90% !important; } }
-.out .modal.select .arr_l, .out .modal.select .arr_r { border: 15px solid transparent; display: inline-block; cursor: pointer; }
+@media only screen and (max-width: 700px) { .out .modal.select h3 { font-size: 14px; text-align: left; margin: 0 0 15px 0; } }
+.out .modal.select .arr_l, .out .modal.select .arr_r { border: 15px solid transparent; display: inline-block; margin-top: 65px; cursor: pointer; }
 @media only screen and (max-width: 700px) { .out .modal.select .arr_l, .out .modal.select .arr_r { display: none; } }
 .out .modal.select .arr_l { border-right: 15px solid #3a3a3a; float: left; }
 .out .modal.select .arr_r { border-left: 15px solid #3a3a3a; float: right; }
 .out .modal.select.photo .photo { width: 165px; height: 165px; border: 1px solid #c5c5c5; display: inline-block; margin: 5px; cursor: pointer; }
-@media only screen and (max-width: 700px) { .out .modal.select.photo .photo { display: block; margin: 10px auto; } }
-.out .modal.select.album { display: block; }
+@media only screen and (max-width: 700px) { .out .modal.select.photo .photo { float: left; height: 65px; width: 65px; border: 1px solid #00b2a9; } }
+@media only screen and (max-width: 700px) { .out .modal.select.photo .photo .inn { width: 65px; height: 65px; } }
 @media only screen and (max-width: 700px) { .out .modal.select.album h3 { font-size: 14px; text-align: left; margin: 0 0 15px 0; } }
 .out .modal.select.album .bot { display: table; width: 100%; padding-top: 15px; text-align: center; }
-.out .modal.select.album .bot .arr_l, .out .modal.select.album .bot .arr_r { display: table-cell; vertical-align: middle; margin-top: 65px; }
+.out .modal.select.album .bot .arr_l, .out .modal.select.album .bot .arr_r { display: table-cell; vertical-align: middle; }
 @media only screen and (max-width: 700px) { .out .modal.select.album .bot .arr_l, .out .modal.select.album .bot .arr_r { display: none; } }
 .out .modal.select.album .bot .inn { width: 80%; display: table-cell; vertical-align: middle; }
 .out .modal.select.album .bot .inn .cover { float: left; cursor: pointer; }
@@ -218,10 +220,11 @@ a { color: white; text-decoration: none; }
 .out .modal.select.album .bot .inn .cover .photo { width: 165px; height: auto; display: inline-block; margin: 5px; }
 @media only screen and (max-width: 700px) { .out .modal.select.album .bot .inn .cover .photo { display: table-cell; width: 40%; vertical-align: middle; } }
 .out .modal.select.album .bot .inn .cover .photo img { max-width: 100%; border: 1px solid #c5c5c5; }
+@media only screen and (max-width: 700px) { .out .modal.select.album .bot .inn .cover .photo img { border: 1px solid #00b2a9; } }
 .out .modal.select.album .bot .inn .cover .info { font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; color: #5b5b5b; }
 @media only screen and (max-width: 700px) { .out .modal.select.album .bot .inn .cover .info { padding-left: 10px; display: table-cell; vertical-align: middle; color: #00b2a9; font-family: "GothamRoundedMedium"; } }
 @media only screen and (max-width: 700px) { .out .modal.select.album .bot .inn .cover .info .con { font-weight: normal; font-family: "GothamRoundedBook"; } }
-.out .modal.edit-photo { top: 20%; }
+.out .modal.edit-photo { display: block; top: 20%; }
 @media only screen and (max-width: 700px) { .out .modal.edit-photo { top: 40%; } }
 .out .modal.edit-photo .top { width: 100%; padding-top: 15px; *zoom: 1; display: table; text-align: center; }
 .out .modal.edit-photo .top:after { content: " "; display: table; clear: both; }

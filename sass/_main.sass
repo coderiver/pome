@@ -593,6 +593,8 @@ a
 			// +s(btn_slg)
 			margin: 60px 0 30px 0
 			width: 180px 
+			+r(700)
+				width: 100%
 
 	.modal.error.type
 		// display: block
@@ -602,7 +604,8 @@ a
 		h3
 			@extend %modal_header
 		.msg
-			width: 430px 
+			width: 430px
+			 
 	.modal.error.size
 		// display: block
 		.msg
@@ -616,10 +619,15 @@ a
 			@extend %exit
 		h3
 			@extend %modal_header
+		+r(700)
+			h3
+				font-size: 14px 
+				text-align: left
+				margin: 0 0 15px 0
 		.arr_l, .arr_r
 			border: 15px solid transparent
 			display: inline-block
-			// margin-top: 65px
+			margin-top: 65px
 			cursor: pointer
 			+r(700)
 				display: none
@@ -630,9 +638,11 @@ a
 		.arr_r
 			border-left: 15px solid #3a3a3a 
 			float: right
-			
+
 	.modal.select.photo
 		// display: block
+		+r(700)
+			// text-align: center 
 		.photo
 			width: 165px 
 			height: 165px 
@@ -641,11 +651,17 @@ a
 			margin: 5px
 			cursor: pointer
 			+r(700)
-				display: block
-				margin: 10px auto
+				float: left
+				height: 65px
+				width: 65px 
+				border: 1px solid $text
+			.inn
+				+r(700)
+					width: 65px
+					height: 65px 
 
 	.modal.select.album
-		display: block
+		// display: block
 		+r(700)
 			h3
 				font-size: 14px 
@@ -662,7 +678,6 @@ a
 			.arr_l, .arr_r
 				display: table-cell 
 				vertical-align: middle
-				margin-top: 65px 
 				// width: 20%
 				+r(700)
 					display: none
@@ -693,6 +708,9 @@ a
 						img
 							max-width: 100%
 							border: 1px solid #c5c5c5
+							+r(700)
+								border: 1px solid $text
+
 					.info
 						font-family: Helvetica, Arial, sans-serif
 						font-size: 14px  
@@ -712,7 +730,8 @@ a
 					
 				
 	.modal.edit-photo
-		// display: block
+		display: block
+		
 		@extend %modal
 		top: 20%
 		+r(700)
