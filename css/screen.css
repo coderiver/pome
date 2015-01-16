@@ -220,10 +220,10 @@ a { color: white; text-decoration: none; }
 .out .modal.edit-photo .top div { display: table-cell; vertical-align: middle; }
 .out .modal.edit-photo .foo { width: 80%; color: #00b2a9; margin: 0 auto; padding-top: 13px; *zoom: 1; }
 .out .modal.edit-photo .foo:after { content: " "; display: table; clear: both; }
+@media only screen and (max-width: 700px) { .out .modal.edit-photo .foo { width: 100%; } }
 .out .modal.edit-photo .foo .inn { float: right; font-family: "GothamRoundedBook"; font-weight: bold; }
 @media only screen and (max-width: 700px) { .out .modal.edit-photo .foo .inn { float: none; } }
-.out .modal.edit-photo .foo .inn span, .out .modal.edit-photo .foo .inn p { margin-left: 10px; }
-@media only screen and (max-width: 700px) { .out .modal.edit-photo .foo .inn span, .out .modal.edit-photo .foo .inn p { margin-right: 5px; } }
+.out .modal.edit-photo .foo .inn span { margin-left: 10px; }
 .out .modal.edit-photo .foo .inn .stats .rate { border: 1px dotted #bdbcbc; cursor: pointer; }
 @media only screen and (max-width: 700px) { .out .modal.edit-photo .foo .inn .stats .rate.m, .out .modal.edit-photo .foo .inn .stats .rate.p { color: #fff; background: #00b2a9; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; font-size: 25px; position: relative; top: 3px; } }
 .out .modal.edit-photo .foo .inn .stats .rate.m { padding: 5px 10px; }
