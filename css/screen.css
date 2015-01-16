@@ -68,14 +68,19 @@ a { color: white; text-decoration: none; }
 .out .header__lang ul li { display: inline-block; padding: 0 6px; }
 .out .header__lang ul li:nth-child(2) { border-right: 2px solid #00b2a9; border-left: 2px solid #00b2a9; }
 .out .header__lang ul li a { color: #00b2a9; font-family: "GothamRoundedMedium"; font-weight: bold; }
+@media only screen and (max-height: 700px) { .out .header__lang.m { display: none; } }
+@media only screen and (max-width: 700px) { .out .header__lang.m { text-align: center; width: 100%; margin: 65px 0 10px 0; }
+  .out .header__lang.m li { text-align: center; width: 26%; }
+  .out .header__lang.m li a { font-size: 16px; } }
 .out .header__bar { display: none; *zoom: 1; }
 .out .header__bar:after { content: " "; display: table; clear: both; }
 @media only screen and (max-width: 700px) { .out .header__bar { display: block; float: right; margin-right: 5%; margin: 30px 5% 0 0; } }
 .out .header__humb { display: none; }
-@media only screen and (max-width: 700px) { .out .header__humb { display: block; width: 60%; float: right; background: #85d3cf; *zoom: 1; }
-  .out .header__humb:after { content: " "; display: table; clear: both; }
-  .out .header__humb .inn { padding: 20px 0; margin-right: 10%; float: right; }
-  .out .header__humb .inn div { width: 30px; margin: 4px 0; height: 5px; background: #00b2a9; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; } }
+.out .header__humb .humb-i { display: block; }
+@media only screen and (max-width: 700px) { .out .header__humb .humb-i { padding: 20px 0; margin-right: 5%; float: right; display: block; position: absolute; top: 0; right: 0; }
+  .out .header__humb .humb-i div { width: 30px; margin: 4px 0; height: 5px; background: #00b2a9; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; } }
+@media only screen and (max-width: 700px) { .out .header__humb { height: 71px; display: block; width: 60%; float: right; background: #85d3cf; *zoom: 1; }
+  .out .header__humb:after { content: " "; display: table; clear: both; } }
 .out .step { margin: 0 auto; width: 80%; position: relative; right: 55px; *zoom: 1; }
 .out .step:after { content: " "; display: table; clear: both; }
 @media only screen and (max-width: 700px) { .out .step { right: 0; } }
