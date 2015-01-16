@@ -51,10 +51,8 @@ $text: #00b2a9
 				background: #FFDE00 	
 				display: inline-block
 .blue
-	// +s(btn)
 	width: auto
 	min-width: 130px
-	// min-height: 100px
 	max-height: 32px   
 	+s(btn_wing)
 	// +background-size(contain 0 0)
@@ -64,10 +62,8 @@ $text: #00b2a9
 	font-weight: bold
 	font-size: 15px 
 	cursor: pointer
-	// +box-shadow(0px 0px 5px #bbbbbb)
 	+border-radius(10px)
-	+r(700)
-		// min-width: 0 
+ 
 .modal
 	display: none
 a
@@ -104,15 +100,12 @@ a
 				max-width: 100% 
 				+r(700)
 					display: none
-					// height: auto 
 					width: 100%
 				a
 					font-family: "GothamRoundedMedium"
 					font-size: 18px 
 					position: relative
 					left: 70px
-					// padding-left: 20px
-					// margin-left: 20px
 					+r(700)
 						display: none  
 					i
@@ -202,7 +195,6 @@ a
 			span
 				font-family: "GothamRoundedMedium"
 				font-size: 80px
-				+text-shadow(-2px -2px 3px #b6b179) 
 				font-weight: bold 
 				color: $logo
 
@@ -730,7 +722,7 @@ a
 					
 				
 	.modal.edit-photo
-		display: block
+		// display: block
 		
 		@extend %modal
 		top: 20%
@@ -844,3 +836,48 @@ a
 						margin-top: 10px 
 						width: 100%
 						margin-left: 0
+						
+.wait
+	display: table
+	position: absolute
+	top: 0 
+	position: fixed
+	width: 100%
+	min-height: 100% 
+	background: $text
+	margin: 0 auto
+	text-align: center
+	.inn
+		display: table-cell 
+		vertical-align: middle
+		text-align: center
+		p
+			color: #fff
+			font-size: 16px 
+			font-family: "GothamRoundedMedium"
+		.bar
+			display: none
+			+r(700)
+				display: block
+				+clr
+				text-align: center
+				.dots
+
+					float: none
+					li
+						display: inline-block
+						a
+							i
+								width: 20px
+								height: 20px
+								border: 1px solid $text
+								background: #FFF 
+								+border-radius(50%) 
+								display: inline-block
+						.is-active
+							i
+								background: #FFDE00 	
+								display: inline-block
+		 
+	
+

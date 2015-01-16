@@ -85,7 +85,7 @@ a { color: white; text-decoration: none; }
 .out .step:after { content: " "; display: table; clear: both; }
 @media only screen and (max-width: 700px) { .out .step { right: 0; } }
 .out .step__num { display: inline-block; float: left; height: 100px; }
-.out .step__num span { font-family: "GothamRoundedMedium"; font-size: 80px; text-shadow: -2px -2px 3px #b6b179; font-weight: bold; color: #ffde00; }
+.out .step__num span { font-family: "GothamRoundedMedium"; font-size: 80px; font-weight: bold; color: #ffde00; }
 .out .step__desc { padding-left: 55px; padding-top: 35px; width: 100%; color: #00b2a9; font-family: "GothamRoundedMedium"; *zoom: 1; }
 .out .step__desc:after { content: " "; display: table; clear: both; }
 @media only screen and (max-width: 700px) { .out .step__desc { width: 80%; } }
@@ -224,7 +224,7 @@ a { color: white; text-decoration: none; }
 .out .modal.select.album .bot .inn .cover .info { font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; color: #5b5b5b; }
 @media only screen and (max-width: 700px) { .out .modal.select.album .bot .inn .cover .info { padding-left: 10px; display: table-cell; vertical-align: middle; color: #00b2a9; font-family: "GothamRoundedMedium"; } }
 @media only screen and (max-width: 700px) { .out .modal.select.album .bot .inn .cover .info .con { font-weight: normal; font-family: "GothamRoundedBook"; } }
-.out .modal.edit-photo { display: block; top: 20%; }
+.out .modal.edit-photo { top: 20%; }
 @media only screen and (max-width: 700px) { .out .modal.edit-photo { top: 40%; } }
 .out .modal.edit-photo .top { width: 100%; padding-top: 15px; *zoom: 1; display: table; text-align: center; }
 .out .modal.edit-photo .top:after { content: " "; display: table; clear: both; }
@@ -256,3 +256,14 @@ a { color: white; text-decoration: none; }
 @media only screen and (max-width: 700px) { .out .modal.edit-photo .foo .inn .rotate span i { background: url('../img/icons-s59996f8cfb.png') 0 -1211px no-repeat; width: 16px; height: 16px; } }
 .out .modal.edit-photo .foo .inn input { padding: 5px 10px; color: #fff; font-family: "GothamRoundedBook"; font-weight: bold; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; background: #00b2a9; margin-left: 10px; cursor: pointer; }
 @media only screen and (max-width: 700px) { .out .modal.edit-photo .foo .inn input { height: 30px; max-height: 32px; background: url('../img/icons-s59996f8cfb.png') 0 -154px no-repeat; width: 22px; height: 30px; background-color: #00b2a9; font-size: 15px; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; margin-top: 10px; width: 100%; margin-left: 0; } }
+
+.wait { display: table; position: absolute; top: 0; position: fixed; width: 100%; min-height: 100%; background: #00b2a9; margin: 0 auto; text-align: center; }
+.wait .inn { display: table-cell; vertical-align: middle; text-align: center; }
+.wait .inn p { color: #fff; font-size: 16px; font-family: "GothamRoundedMedium"; }
+.wait .inn .bar { display: none; }
+@media only screen and (max-width: 700px) { .wait .inn .bar { display: block; *zoom: 1; text-align: center; }
+  .wait .inn .bar:after { content: " "; display: table; clear: both; }
+  .wait .inn .bar .dots { float: none; }
+  .wait .inn .bar .dots li { display: inline-block; }
+  .wait .inn .bar .dots li a i { width: 20px; height: 20px; border: 1px solid #00b2a9; background: #FFF; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; display: inline-block; }
+  .wait .inn .bar .dots li .is-active i { background: #FFDE00; display: inline-block; } }
