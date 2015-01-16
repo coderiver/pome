@@ -19,8 +19,6 @@ $text: #00b2a9
 	background-color: #fff
 	padding: 10px
 	+r(700)
-		// position: relative
-		// margin: 0 auto  
 		width: 90% 
 		left: 0 
 		margin-left: 2% 
@@ -55,7 +53,8 @@ $text: #00b2a9
 	min-width: 130px
 	max-height: 32px   
 	+s(btn_wing)
-	// +background-size(contain 0 0)
+	// +background-size(cover)
+	// background-attachment: fixed
 	background-color: $text
 	padding: 0px 20px
 	color: #fff
@@ -137,7 +136,6 @@ a
 					display: none
 				+r(700)
 					text-align: center
-					// display: block
 					width: 100% 
 					margin: 65px 0 10px 0 
 					li
@@ -221,8 +219,6 @@ a
 					display: none
 				.dots
 					float: right
-					// position: relative
-					// top: 50px 
 					li
 						display: inline-block
 						a
@@ -338,9 +334,6 @@ a
 						position: relative
 						float: right
 						margin-top: 157px 
-						// margin-right: 100px
-						// top: 85px
-						// left: 140px 
 						display: none
 		&__video
 			width: 100%
@@ -365,13 +358,10 @@ a
 			+r(700)
 				width: 80%
 				margin-top: 30px
-				// padding-left: 55px
 				text-align: center
 				
 			.blue
 				margin-right: 15px
-				+r(700)
-					// display: none
 				&.fb
 					+r(700)
 						margin-right: 0px 
@@ -390,7 +380,6 @@ a
 					float: right
 					height: 30px
 					width: 48% 
-					// margin-left: 1%
 					background: $text
 					color: #fff
 					font-family: "GothamRoundedMedium"
@@ -401,7 +390,6 @@ a
 					display: inline-block
 					float: left
 					width: 48%
-					// margin-right: 1% 
 					+border-bottom-right-radius(0)  
 					+border-top-right-radius(0)  
 			span
@@ -415,8 +403,6 @@ a
 		&__field
 			margin: 0 auto
 			width: 100%
-			// min-height: 200px
-			// max-height: 600px 
 			border: 1px solid #d1d1d1 
 			background: #FFF 
 			padding-top: 20px 
@@ -488,6 +474,7 @@ a
 			.create
 		&__watch
 			+r(700)
+				margin-top: 15px 
 				width: 100%
 			video
 				+r(700)
